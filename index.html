@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Sreshta Siliveri Portfolio</title>
+        <link rel="stylesheet" href="style.css" />
+        <script defer src="script.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+      </head>
+<body>
+    <header>
+        <div class="header-container">
+          <div class="logo">SRESHTA SILIVERI<span class="accent"></span></div>
+          <nav id="nav">
+            <ul class="nav-links">
+              <li><a href="#hero">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#skills">Skills</a></li>
+              <li><a href="#projects">Projects</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </nav>
+          <div class="controls">
+            <div id="theme-toggle" class="theme-toggle" title="Toggle dark mode">
+              <i class="fas fa-moon"></i>
+            </div>
+            <div id="menu-toggle" class="menu-toggle">
+              <i class="fas fa-bars"></i>
+            </div>
+          </div>
+        </div>
+      </header>
+      
+         
+    
+    <section id="hero">
+      <div class="hero-container" data-aos="fade-up">
+        <div class="hero-text">
+          <h1>Hi, I'm <span class="highlight">Sreshta Siliveri</span></h1>
+          <h2><span class="typed-role"></span></h2>
+          <p>I build beautiful, responsive websites using HTML, CSS, and JavaScript. I love turning ideas into interactive digital experiences.</p>
+          <a href="#contact" class="btn">Let's Connect</a>
+          <div class="social-links">
+            <a href="https://github.com/" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://linkedin.com/" target="_blank"><i class="fab fa-linkedin"></i></a>
+          </div>
+        </div>
+        <div class="hero-image" data-aos="zoom-in">
+          <img src="profile.jpg" alt="Sreshta Siliveri" class="profile-img">
+        </div>
+      </div>
+    </section>
+    
+    <!-- AOS Script (place before </body>) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    
+    <!-- Typed.js Script -->
+    <script>
+      new Typed(".typed-role", {
+        strings: ["Front-End Developer", "Web Designer", "Creative Coder"],
+        typeSpeed: 50,
+        backSpeed: 30,
+        loop: true
+      });
+    </script>
+    
+    <!-- Font Awesome for icons (Add in <head>) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    
+
+  <section id="about">
+    <div class="container">
+      <h2>About Me</h2>
+      <div class="about-content">
+        <p>
+          Hello! I'm <strong>Sreshta Siliveri</strong>, a passionate front-end web developer with a strong interest in crafting beautiful and user-friendly websites. I specialize in <strong>HTML, CSS, and JavaScript</strong>, and I love transforming ideas into interactive digital experiences that make a real impact.
+        </p>
+        <p>
+          I'm currently pursuing a <strong>B.Tech in Computer Science (AI & ML)</strong> at <strong>Malla Reddy University</strong>. I’ve been actively learning web development through online courses, hands-on practice, and self-driven projects.
+        </p>
+        <p>
+          I enjoy experimenting with new technologies, building responsive layouts, and collaborating with others. Creative problem-solving is what excites me most—whether I’m designing a modern UI or debugging a tricky function.
+        </p>
+        <p>
+          Outside of coding, you'll find me reading, exploring new tools, or dabbling in graphic design. I'm always looking for exciting opportunities to grow as a developer and contribute to meaningful projects that make a difference.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills">
+    <div class="container">
+      <h2>Skills</h2>
+      <p>Here are some of the technologies and tools I’m confident working with:</p>
+
+    <div class="skills-grid">
+      <div class="skills-column">
+        <h3>Frontend</h3>
+        <ul>
+          <li>HTML5</li>
+          <li>CSS3</li>
+          <li>JavaScript (ES6+)</li>
+          <li>Responsive Web Design</li>
+          <li>Bootstrap</li>
+          <li>Tailwind CSS</li>
+        </ul>
+      </div>
+      <div class="skills-column">
+        <h3>Tools & Platforms</h3>
+        <ul>
+          <li>VS Code</li>
+          <li>Git & GitHub</li>
+          <li>Figma (UI Prototyping)</li>
+          <li>Chrome DevTools</li>
+        </ul>
+      </div>
+      <div class="skills-column">
+        <h3>Soft Skills</h3>
+        <ul>
+          <li>Creative Problem Solving</li>
+          <li>Team Collaboration</li>
+          <li>Continuous Learning</li>
+          <li>Time Management</li>
+        </ul>
+      </div>
+    </div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <div class="container">
+      <h2>Projects</h2>
+      <p>Here are some of the personal and professional projects I’ve worked on.</p>
+
+    <div class="projects-grid">
+      <div class="project-card">
+        <h3>Text Summarization</h3>
+        <p>A web app that summarizes the large amount of datasets or PDF informations.</p>
+        <a href="http://localhost:8501/" target="_blank">View Project</a>
+      </div>
+
+      <div class="project-card">
+        <h3>Portfolio Website</h3>
+        <p>This portfolio website was built using HTML, CSS, and vanilla JavaScript to showcase my skills.</p>
+        <a href="http://127.0.0.1:5500/index.html#hero" target="_blank">View Project</a>
+      </div>
+    </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="container">
+      <h2>Contact</h2>
+      <p>If you'd like to collaborate or have any questions, feel free to get in touch using the form below.</p>
+    
+    <form id="contact-form">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+
+    <div id="form-message" style="display:none; margin-top: 10px; color: green;">
+      ✅ Your message has been sent!
+    </div>
+
+    <div class="contact-details">
+      <p><strong>Email:</strong> sreshtasiliveri@gmail.com</p>
+      <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/sreshta-siliveri-44b903261/" target="_blank">linkedin.com/in/sreshta-siliveri</a></p>
+      <p><strong>GitHub:</strong> <a href="https://github.com/Sreshta-Siliveri" target="_blank">github.com/Sreshta-Siliveri</a></p>
+    </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Sreshta Siliveri. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
